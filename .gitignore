@@ -1,0 +1,7 @@
+*.out
+checkpoints/
+new_checkpoints/
+wandb/
+ebm_checkpoints/
+outputs/
+data/

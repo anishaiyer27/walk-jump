@@ -1,0 +1,14 @@
+defaults:
+  - model_checkpoint.yaml
+  - early_stopping.yaml
+  - lr_monitor.yaml
+  - _self_
+
+
+model_checkpoint:
+  dirpath: checkpoints/"{model.model._target_}"
+  filename: "sigma{model.model_cfg.hyperparameters.sigma:.4f}_lr{model.model_cfg.hyperparameters.lr:.4f}_embnoise{emb_noise:.4f}_{epoch}-{step}-{val_loss:.4f}"
+  monitor: val_loss
+
+early_stopping:
+  monitor: val_loss

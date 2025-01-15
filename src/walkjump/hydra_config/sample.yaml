@@ -1,0 +1,31 @@
+defaults:
+    - _self_
+    - setup: default
+
+model:
+  _target_: walkjump.cmdline.utils.instantiate_model_for_sample_mode
+
+  sample_mode_model_cfg:
+    model_type: noise_ebm
+    checkpoint_path: "./ebm_checkpoints/sigmasigma=0_lrlr=0_embnoiseemb_noise=0_epoch=0-step=2529-val_loss=-0.0432-v1.ckpt"
+    denoise_path: 'ebm_checkpoints/sigmasigma=0.0000_lrlr=0.0000_embnoiseemb_noise=0.0000_epoch=8-step=45522-val_loss=0.0048.ckpt'
+
+langevin:
+  sigma: 1.0
+  delta: 0.5
+  lipschitz: 1.0
+  friction: 1.0
+  steps: 20
+  chunksize: 4 # reduced from 8
+
+designs:
+  output_csv: samplesED_32_dim_10.csv
+  redesign_regions: null
+  seeds: denovo
+  num_samples: 10
+  limit_seeds: 10
+  chunksize: 1
+
+device: cuda
+
+dryrun: false

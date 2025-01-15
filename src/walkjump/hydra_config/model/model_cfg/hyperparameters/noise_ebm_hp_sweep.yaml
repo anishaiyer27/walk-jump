@@ -1,0 +1,21 @@
+defaults:
+  - default
+
+batch_size: 256  #updated to match paper
+beta1: 0.9
+sigma: 0.1
+lr: 0.0001
+
+optimizer: adamw  # added AdamW optimizer for consistency with paper
+
+# Hydra sweep setup
+hydra:
+  sweep:
+    dir: null
+    subdir: null
+    sweeper:
+      name: optuna
+      n_trials: 4
+      direction: minimize
+      search_space:
+        sigma: float(0.5, 4.0)

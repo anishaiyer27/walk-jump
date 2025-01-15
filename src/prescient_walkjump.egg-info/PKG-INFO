@@ -1,3 +1,23 @@
+Metadata-Version: 2.1
+Name: prescient-walkjump
+Version: 0.0.post1.dev11+ge0cddc1.d20241220
+Summary: Walk-jump
+Author-email: "Nathan C. Frey" <frey.nathan.nf1@gene.com>
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: biopython
+Requires-Dist: edlib
+Requires-Dist: hydra-core>=1.2.0
+Requires-Dist: jupyter
+Requires-Dist: ipykernel
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: lightning==1.9.0
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: wandb
+Requires-Dist: python-dotenv
+
 # discrete Walk-Jump Sampling (dWJS)
 
 This is the official open source repository for [discrete Walk-Jump Sampling](https://arxiv.org/abs/2306.12360) developed by [ncfrey](https://github.com/ncfrey), [djberenberg](https://github.com/djberenberg), [kleinhenz](https://github.com/kleinhenz), and [saeedsaremi](https://github.com/saeedsaremi), from [Prescient Design, a Genentech accelerator.](https://gene.com/prescient)

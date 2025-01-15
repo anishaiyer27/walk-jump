@@ -1,0 +1,7 @@
+defaults:
+  - default
+
+batch_size: 256
+beta1: 0.9
+sigma: 0.1
+lr: 0.000001
