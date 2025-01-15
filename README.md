@@ -1,10 +1,13 @@
-# Revisions to discrete Walk-Jump Sampling (dWJS)
+# Reimplementation of discrete Walk-Jump Sampling (dWJS)
 
 This project is based on [discrete Walk-Jump Sampling](https://arxiv.org/abs/2306.12360) which was developed by [ncfrey](https://github.com/ncfrey), [djberenberg](https://github.com/djberenberg), [kleinhenz](https://github.com/kleinhenz), and [saeedsaremi](https://github.com/saeedsaremi), from [Prescient Design, a Genentech accelerator.](https://gene.com/prescient)
 
 The original license is included as LICENSE.txt.
 
 The following restates the setup, training, sampling and evaluation instructions from the original repository.
+
+## Disclaimer
+This repository is not affiliated with, maintained by, or endorsed by Prescient Design, a Genentech accelerator.](https://gene.com/prescient
 
 ## Setup
 Assuming you have [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed, clone the repository, navigate inside, and run:
