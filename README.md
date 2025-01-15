@@ -4,10 +4,11 @@ This project is based on [discrete Walk-Jump Sampling](https://arxiv.org/abs/230
 
 The original license is included as LICENSE.txt.
 
-The following restates the setup, training, sampling and evaluation instructions from the original repository.
-
 ## Disclaimer
 This repository is not affiliated with, maintained by, or endorsed by Prescient Design, a Genentech accelerator.](https://gene.com/prescient)
+
+
+The following restates the setup, training, sampling and evaluation instructions from the original repository.
 
 ## Setup
 Assuming you have [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed, clone the repository, navigate inside, and run:
